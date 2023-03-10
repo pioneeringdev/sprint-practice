@@ -55,3 +55,7 @@ exports.deterministicPartitionKey = (event) => {
    */
   return candidate.length > MAX_PARTITION_KEY_LENGTH ? crypto.createHash("sha3-512").update(candidate).digest("hex") : candidate
 };
+
+/**
+ * My code is very clean and readable because stopped running rest of code for special cases, so it's easy to understand what are the special cases, and what are the general cases and what we do in each cases.
+ */
